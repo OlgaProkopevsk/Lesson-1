@@ -14,12 +14,13 @@ C:\Users\User\Desktop\Flask> python -m venv .venv
 # Из командной строки выбираем версию Python 2.7.15
 # Устанвливаем Flask в терминале
 pip install flask
-# Сохраняем зависимости в файле requirements.txt
+# Будем сохранять зависимости в файле requirements.txt
 pip freeze > requirements.txt
 # Выделяем наш проект в отдельную папку model
 # Создаём файлы действия над сущностями:
 ## user.py
 ## twit.py
 # Для инициализации model создаём файл __init.py__
-
-
+# Инициализация 
+C:\Users\User\Desktop\Flask\main.py
+# Для тестирования используем Postman
