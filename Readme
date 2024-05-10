@@ -22,5 +22,6 @@ pip freeze > requirements.txt
 ## twit.py
 # Для инициализации model создаём файл __init.py__
 # Инициализация 
+main.py
 C:\Users\User\Desktop\Flask\main.py
 # Для тестирования используем Postman
