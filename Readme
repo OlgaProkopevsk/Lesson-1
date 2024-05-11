@@ -1,41 +1,42 @@
-# Проект REST API, предоставляющее возможность ведения блога
-# Сущности:
-## пользователь
-## пост
-# Пользователь имеет возможность:
-## создать
-## прочитать
-## изменить
-## удалить пост
-# Coздаём папку FLASK
+Проект REST API, предоставляющее возможность ведения блога
+1. Сущности:
+пользователь
+пост
+2. Пользователь имеет возможность:
+создать
+прочитать
+изменить
+удалить пост
+Coздаём папку FLASK
 C:\Users\User\Desktop\Flask
-# Coздаём виртуальную среду
+Coздаём виртуальную среду
 C:\Users\User\Desktop\Flask> python -m venv .venv
-# Из командной строки выбираем версию Python 2.7.15
-# Устанвливаем Flask в терминале
+Из командной строки выбираем версию Python 2.7.15
+Устанвливаем Flask в терминале
 pip install flask
-# Будем сохранять зависимости в файле requirements.txt
+Будем сохранять зависимости в файле requirements.txt
 pip freeze > requirements.txt
-# Выделяем наш проект в отдельную папку model
-# Создаём файлы действия над сущностями:
-## user.py
-## twit.py
-# Для инициализации model создаём файл __init.py__
-# Инициализация 
-main.py
-C:\Users\User\Desktop\Flask\main.py
-# Для тестирования используем Postman
-# Выбираем вкладку HTTP Request - метод GET - URL: localhost:5000/twit
-https://web.postman.co/workspace/twitter_api~5cbbd7d5-5def-4af6-adb3-bc570adca053/history/34243421-83b550ba-a9e3-440e-9bfc-89028cd0c824
-# Результат
+Выделяем наш проект в отдельную папку model
+Создаём файлы действия над сущностями:
+user.py
+twit.py
+Для инициализации model создаём файл init.py
+Инициализация
+
+Для тестирования используем Postman
+Выбираем вкладку HTTP Request - метод GET - URL: localhost:5000/twit
+Запускаем
+
+Результат
 127.0.0.1 - - [10/May/2024 18:46:30] "GET /twit HTTP/1.1" 200 -
 {
     "twits": "twits"
 }
-# Выбираем вкладку метод POST - URL: localhost:5000/twit -Body - raw - JSON
-# где тело: {"body": "Hello Word", "autor": "@aqague"} 
-https://web.postman.co/workspace/twitter_api~5cbbd7d5-5def-4af6-adb3-bc570adca053/history/34243421-c1be004b-ee03-4559-80e
-# Результат
+Выбираем вкладку метод POST - URL: localhost:5000/twit -Body - raw - JSON
+где тело: {"body": "Hello Word", "autor": "@aqague"}
+Запускаем
+
+Результат
 127.0.0.1 - - [10/May/2024 18:46:35] "POST /twit HTTP/1.1" 200 -
 {
     "status": "success"
